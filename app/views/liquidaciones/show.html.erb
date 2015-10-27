@@ -1,0 +1,24 @@
+<p>
+  <strong>Prestador:</strong>
+  <%= @prestador.nombre %>
+</p>
+<p>
+  <strong>Mes:</strong>
+  <%= @liquidacion.mes %>
+</p>
+<p>
+  <strong>Monto Mensual Minimo:</strong>
+  <%= @prestador.basico_mensual %>
+</p>
+<p>
+  <strong>Consumos:</strong>
+  <%= render 'consumos' %>
+</p>
+<p>
+  <strong>Prestaciones:</strong>
+  <%= render 'prestaciones' %>
+</p>
+<p>
+  <strong>Total a Liquidar:</strong>
+  <%= @liquidacion_total %>
+</p>

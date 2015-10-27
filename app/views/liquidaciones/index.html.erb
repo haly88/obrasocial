@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>Prestador</th>
+      <th>Mes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @liquidaciones.each do |c| %>
+      <tr>
+        <td><%= link_to c.prestador.nombre, liquidacion_path(c)  %></td>
+        <td><%= link_to c.mes, liquidacion_path(c) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
